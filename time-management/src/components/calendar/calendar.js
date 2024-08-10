@@ -34,7 +34,7 @@ const CalendarContainer = ({ className, setDeadlineDate }) => {
 	sanitizedDate = sanitizedDate[0].toUpperCase() + sanitizedDate.substring(1);
 
 	const onDeadlineCancelClick = () => {
-		setDeadlineDate(null);
+		setDeadlineDate('');
 		dispatch(toggleModal(false));
 	};
 
